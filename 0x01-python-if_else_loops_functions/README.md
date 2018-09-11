@@ -42,18 +42,21 @@
 ---
 File|Task
 ---|---
-0-run | a Shell script that runs a Python script
-1-run_inline | a Shell script that runs Python code
-2-print.py | a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line
-3-print_number.py | print the integer stored in the variable number, followed by Battery street, followed by a new line
-4-print_float.py | print the float stored in the variable number with a precision of 2 digits
-5-print_string.py | print 3 times a string stored in the variable str, followed by its first 9 characters
-6-concat.py | print Welcome to Holberton School!
-7-edges.py |
-8-concat_edges.py | print object-oriented programming with Python, followed by a new line
-9-easter_egg.py | a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line
-10-check_cycle.c | a function in C that checks if a singly linked list has a cycle in it
-lists.h | the header file
+0-positive_or_negative.py | assign a random signed number to the variable number each time it is executed
+1-last_digit.py | assign a random signed number to the variable number each time it is executed
+2-print_alphabet.py | prints the alphabet, in lowercase, not followed by a new line
+3-print_alphabt.py | prints the alphabet - except the letter q and e -, in lowercase, not followed by a new line
+4-print_hexa.py | prints all numbers from 0 to 98 in decimal and in hexadecimal
+5-print_comb2.py | prints numbers from 0 to 99
+6-print_comb3.py | prints all possible different combinations of two digits
+7-islower.py | a function that checks for lowercase characters
+8-uppercase.py | prints a string in uppercase followed by a new line
+9-print_last_digit.py | prints the last digit of a number
+10-add.py | adds two integers and returns the result
+11-pow.py | computes a to the power of b and return the value
+12-fizzbuzz.py | prints the numbers from 1 to 100 separated by a space
+13-insert_number.c | inserts a number into a sorted singly linked list
+lists.h | header file
 
 ## Author
 Leine Valente
