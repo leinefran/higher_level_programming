@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print("abcdefghijklmnopqrstuvwxy",end='z')
+str = "abcdefghijklmnopqrstuwxyz"
+
+for letter in str:
+    print(letter, end="")
