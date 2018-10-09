@@ -1,4 +1,4 @@
-#!/usr/byn/python3
+#!/usr/bin/python3
 """Empty class rectangle"""
 
 
