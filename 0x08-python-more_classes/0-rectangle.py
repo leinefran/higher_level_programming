@@ -1,7 +1,7 @@
-#!/usr/byn/python3
+#!/usr/bin/python3
 """Empty class rectangle"""
 
 
-    class Rectangle:
-        """"Represents a class rectangle"""
-        pass
+class Rectangle:
+    """"Represents a class rectangle"""
+    pass
