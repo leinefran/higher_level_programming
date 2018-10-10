@@ -36,8 +36,12 @@
 File|Task
 ---|---
 0-answer.txt | a function that prints the type of an object
-1-answer.txt | 
-
+1-answer.txt | function to get a variable identifier without the ()
+2-answer.txt | answers if a and b points or not to the same object
+3-answer.txt | answers if a and b points or not to the same object
+4-answer.txt | answers if a and b points or not to the same object
+5-answer.txt | answers if a and b points or not to the same object
+6-answer.txt | answers what line 3 should print
 
 ## Author
 Leine Valente
