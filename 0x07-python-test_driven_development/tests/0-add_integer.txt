@@ -103,3 +103,13 @@ TypeError: b must be an interger
 
 >>> print(add_integer(8.9, 2))
 10
+
+>>> print(add_integer(int(8), 2))
+10
+
+>>> x = print(add_integer(3 ,1))
+4
+>>> x == float('int') or x == -float('inf')
+Traceback (most recent call last):
+...
+ValueError: could not convert string to float: 'int'
