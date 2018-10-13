@@ -46,12 +46,12 @@ TypeError: a must be an integer
 >>> print(add_integer(0, None))
 Traceback (most recent call last):
 ...
-TypeError: b must be an interger
+TypeError: b must be an integer
 
 >>> print(add_integer(0, 'a'))
 Traceback (most recent call last):
 ...
-TypeError: b must be an interger
+TypeError: b must be an integer
 
 >>> print(add_integer(-1, 1))
 0
@@ -67,7 +67,7 @@ TypeError: a must be an integer
 >>> print(add_integer(7, "Betty"))
 Traceback (most recent call last):
 ...
-TypeError: b must be an interger
+TypeError: b must be an integer
 
 >>> print(add_integer(7.10, ))
 105
@@ -80,7 +80,7 @@ TypeError: unhashable type: 'list'
 >>> print(add_integer(7.10,{2, 5.7}))
 Traceback (most recent call last):
 ...
-TypeError: b must be an interger
+TypeError: b must be an integer
 
 >>> print(add_integer(99.999999999999999999999999, 2))
 102
@@ -99,7 +99,7 @@ ValueError: cannot convert float NaN to integer
 >>> print(add_integer(8, "2"))
 Traceback (most recent call last):
 ...
-TypeError: b must be an interger
+TypeError: b must be an integer
 
 >>> print(add_integer(8.9, 2))
 10
