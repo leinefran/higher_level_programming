@@ -95,3 +95,8 @@ TypeError: b must be an interger
 Traceback (most recent call last):
 ...
 ValueError: cannot convert float NaN to integer
+
+>>> print(add_integer(8, "2"))
+Traceback (most recent call last):
+...
+TypeError: b must be an interger
