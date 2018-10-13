@@ -81,3 +81,17 @@ TypeError: unhashable type: 'list'
 Traceback (most recent call last):
 ...
 TypeError: b must be an interger
+
+>>> print(add_integer(99.999999999999999999999999, 2))
+102
+
+>>> print(add_integer(float(8), 2))
+10
+
+>>> print(add_integer(float(8), float(2)))
+10
+
+>>> print(add_integer(8, float('NaN')))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float NaN to integer
