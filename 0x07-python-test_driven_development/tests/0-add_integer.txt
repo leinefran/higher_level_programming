@@ -1,0 +1,83 @@
+``add_integer`` function
+========================
+
+Using ``add_integer``
+---------------------
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> print(add_integer())
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> print(add_integer(None))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> print(add_integer(0))
+98
+
+>>> print(add_integer(0, 0))
+0
+
+>>> print(add_integer(1, 1))
+2
+
+>>> print(add_integer(1, ))
+99
+
+>>> print(add_integer('a'))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> print(add_integer([0]))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> print(add_integer({0:0}))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> print(add_integer(0, None))
+Traceback (most recent call last):
+...
+TypeError: b must be an interger
+
+>>> print(add_integer(0, 'a'))
+Traceback (most recent call last):
+...
+TypeError: b must be an interger
+
+>>> print(add_integer(-1, 1))
+0
+
+>>> print(add_integer(-1, -6))
+-7
+
+>>> print(add_integer("Betty"))
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+>>> print(add_integer(7, "Betty"))
+Traceback (most recent call last):
+...
+TypeError: b must be an interger
+
+>>> print(add_integer(7.10, ))
+105
+
+>>> print(add_integer(7.10,{2, [2, 3, 4], 5.7}))
+Traceback (most recent call last):
+...
+TypeError: unhashable type: 'list'
+
+>>> print(add_integer(7.10,{2, 5.7}))
+Traceback (most recent call last):
+...
+TypeError: b must be an interger
