@@ -28,9 +28,12 @@ class Rectangle(BaseGeometry):
 
     def area(self):
         a = self.__width * self.__height
-        print("[Rectangle] {}/{}".format(self.__width, self.__height))
-
         return str(a)
+
+    def __str__(self):
+        return ("[Rectangle] {}/{}".format(self.__width, self.__height))
+
+
 
 class Square(Rectangle):
     """Represents the class Rectangle"""
@@ -44,6 +47,7 @@ class Square(Rectangle):
 
     def area(self):
         a = self.__size * self.__size
-        print("[Rectangle] {}/{}".format(self.__size, self.__size))
-
         return str(a)
+
+    def __str__(self):
+        return ("[Rectangle] {}/{}".format(self.__size, self.__size))
