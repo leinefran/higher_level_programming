@@ -3,14 +3,13 @@
 
 
 def number_of_lines(filename=""):
-    """Getting the line count of a file using enumerate()"""
+    """Getting the line count of a file using readlines()"""
 
     lines = 0
 
     with open(filename, 'rt') as f:
-        while True:
-            read = f.readline()
-            lines += 1
-            if not read:
-                break
-    return lines
+        """Readlines() read a line at a time,
+        & returns a list of 1-line strings"""
+        read = f.readlines()
+
+    return len(read)
