@@ -1,7 +1,13 @@
-''print_sorted''function
+''MyList''class
 ========================
 
-Using '''print_sorted''
+Using '''My_list''
 ---------------------
 
 >>> MyList = __import__('1-my_list').MyList
+
+>>> my_list = MyList()
+>>> my_list.append(-9)
+>>> my_list.append(-5)
+>>> my_list.append(-7)
+>>> my_list.append()
