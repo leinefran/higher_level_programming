@@ -10,7 +10,7 @@ def read_lines(filename="", nb_lines=0):
     with open(filename, 'rt') as f:
         if nb_lines <= 0 or nb_lines >= len(open(filename).readlines()):
             read = f.read()
-            print(read,end="")
+            print(read, end="")
         while nb_lines:
             read = f.readline()
             nb_lines -= 1
