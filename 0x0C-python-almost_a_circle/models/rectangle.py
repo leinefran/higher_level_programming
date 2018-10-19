@@ -97,3 +97,6 @@ class Rectangle(Base):
         for i in range(self.height):
             rect = [" " * self.x] + ["#" * self.width]
             print("".join(rect))
+
+    def update(self, *args):
+        """A public method that assigns an argument to each attribute"""
