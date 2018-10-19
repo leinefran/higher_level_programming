@@ -19,7 +19,7 @@ def pascal_triangle(n):
             elif j == i:
                 nested_list += [1]
             else:
-                nested_list = my_list[i -1][j - 1] + my_list[i - 1][j]
+                nested_list = my_list[i - 1][j - 1] + my_list[i - 1][j]
 
         my_list += nested_list
 
