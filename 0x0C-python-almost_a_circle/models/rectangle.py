@@ -103,7 +103,7 @@ class Rectangle(Base):
 
         idx = 0
 
-        if args:
+        if args and len(args) != 0:
             for arg in args:
                 if idx == 0:
                     self.id = arg
