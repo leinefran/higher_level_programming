@@ -98,21 +98,36 @@ class Rectangle(Base):
             rect = [" " * self.x] + ["#" * self.width]
             print("".join(rect))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """A public method that assigns an argument to each attribute"""
 
         idx = 0
 
-        for arg in args:
-            if idx == 0:
-                self.id = arg
-            if idx == 1:
-                self.width = arg
-            if idx == 2:
-                self.height = arg
-            if idx == 3:
-                self.x = arg
-            if idx == 4:
-                self.y = arg
+        if args:
+            for arg in args:
+                if idx == 0:
+                    self.id = arg
+                if idx == 1:
+                    self.width = arg
+                if idx == 2:
+                    self.height = arg
+                if idx == 3:
+                    self.x = arg
+                if idx == 4:
+                    self.y = arg
 
-            idx += 1
+                idx += 1
+
+        else:
+            if kwargs is not None:
+                for key, value in kwargs.iteritems():
+                    if key == self.id:
+                        self.id = value
+                    if key == self.width:
+                        self.width = value
+                    if key == self.height:
+                        self.height = value
+                    if key == self.x:
+                        self.x = value
+                    if key == self.y:
+                        self.y = value
