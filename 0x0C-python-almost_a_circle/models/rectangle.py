@@ -121,14 +121,13 @@ class Rectangle(Base):
         else:
             if kwargs is not None:
                 for key, value in kwargs.items():
-                    if key == self.id:
+                    if key == 'id':
                         self.id = value
-                    if key == self.width:
+                    if key == 'width':
                         self.width = value
-                    if key == self.height:
+                    if key == 'height':
                         self.height = value
-                    if key == self.x:
+                    if key == 'x':
                         self.x = value
-                    if key == self.y:
+                    if key == 'y':
                         self.y = value
-
