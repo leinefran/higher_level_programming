@@ -31,3 +31,5 @@ class Square(Rectangle):
         """Overriding the __str__ method"""
         return("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.size))
+
+    def mybrain(self):
