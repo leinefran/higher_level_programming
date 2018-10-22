@@ -8,13 +8,11 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """Square instantiation"""
+        super().__init__(size, size, x, y, id=None)
+        self.size = size
 
-        super().__init__(size, x, y, id=None)
-
-        self.width = size
-        self.height = size
 
     def __str__(self):
         """Overriding the __str__ method"""
         return("[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
-                                               self.size))
+                                                 self.size))
