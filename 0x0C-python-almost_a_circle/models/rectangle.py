@@ -93,7 +93,7 @@ class Rectangle(Base):
         """Print in stdout the Rectangle instance with
         the character # by taking care of x and y"""
         rect = []
-        print("" * self.y)
+        print("\n" * self.y, end="")
         for i in range(self.height):
             rect = [" " * self.x] + ["#" * self.width]
             print("".join(rect))
