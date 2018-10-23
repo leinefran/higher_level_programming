@@ -41,7 +41,7 @@ class Base:
         """Returns the list of the JSON string representation json_string"""
         if json_string is None:
             return []
-        return json_string
+        return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
@@ -54,3 +54,16 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instances"""
+        final_list = []
+        try:
+            with open(cls.__name__ + ".json", 'r') as f:
+                my_list = cls.from_json_string(f.read())
+                for element in my_list:
+                     final_list.append([cls.create(**element)])
+                return final_list
+        except IOError:
+            return []
