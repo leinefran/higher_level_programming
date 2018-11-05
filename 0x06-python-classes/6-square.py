@@ -47,7 +47,6 @@ class Square():
         else:
             self.__position = value
 
-
     def my_print(self):
         if self.__size == 0:
             print("")
