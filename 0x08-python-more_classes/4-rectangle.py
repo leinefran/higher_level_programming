@@ -28,7 +28,7 @@ class Rectangle:
     @property
     def height(self):
         """"Returns the height size"""
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -59,7 +59,8 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 rect += "#"
-            rect += "\n"
+            if i != self.height - 1:
+                rect += "\n"
         return rect
 
     def __repr__(self):
