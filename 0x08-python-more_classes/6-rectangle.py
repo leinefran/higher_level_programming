@@ -12,8 +12,8 @@ class Rectangle:
         type(self).number_of_instances += 1
 
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -32,7 +32,7 @@ class Rectangle:
     @property
     def height(self):
         """"Returns the height size"""
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -45,14 +45,14 @@ class Rectangle:
 
     def area(self):
         """"Returns the area of the rectangle"""
-        a = self.__width * self.__height
+        a = self.width * self.height
         return a
 
     def perimeter(self):
         """"Returns the perimeter of a Rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        p = 2*(self.__width + self.__height)
+        p = 2*(self.width + self.height)
         return p
 
     def __str__(self):
@@ -60,8 +60,8 @@ class Rectangle:
         rect = ""
         if self.__width == 0 or self.__height == 0:
             return rect
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for i in range(self.height):
+            for j in range(self.width):
                 rect += "#"
             rect += "\n"
         return rect
