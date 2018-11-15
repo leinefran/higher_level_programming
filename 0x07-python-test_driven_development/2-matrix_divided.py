@@ -30,7 +30,9 @@ def matrix_divided(matrix, div):
 
         new_matrix = []
         for row in matrix:
+            tmp = []
             for num in row:
-                new_num = "{0:.2f}".format(num/div)
-                new_matrix.append(new_num)
+                num = num/div
+                tmp.append(round(num, 2))
+            new_matrix.append(tmp)
         return new_matrix
