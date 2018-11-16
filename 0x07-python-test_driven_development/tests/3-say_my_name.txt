@@ -1,0 +1,27 @@
+``say_my_name`` function
+========================
+
+Using ``say_my_name``
+---------------------
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> print(say_my_name("Bob", "Layne"))
+My name is Bob Layne
+
+>>> print(say_my_name("Bob", ))
+...
+TypeError: say_my_name() missing second argument
+
+>>> print(say_my_name("Bob", 23))
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> print(say_my_name(12, "Marlowe"))
+...
+TypeError: first_name must be a string
+
+>>> print(say_my_name())
+...
+TypeError: say_my_name() missing two argument
