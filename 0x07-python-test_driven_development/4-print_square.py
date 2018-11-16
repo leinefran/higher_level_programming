@@ -5,7 +5,6 @@
 def print_square(size):
     """a function that prints a square with the character #"""
 
-    #size is the size length of the square
 
     if type(size) != int:
         raise TypeError("size must be an integer")
@@ -16,7 +15,6 @@ def print_square(size):
     if type(size) is float and size < 0:
         raise TypeError("size must be an integer")
 
-    #print:
     rec = ""
     for i in range(size):
         print("#" * size)
