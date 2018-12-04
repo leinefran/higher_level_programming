@@ -1,1 +1,2 @@
-mysql -u root -p -e 'SHOW DATABASES;'
+-- shows all databases
+SHOW DATABASES;
