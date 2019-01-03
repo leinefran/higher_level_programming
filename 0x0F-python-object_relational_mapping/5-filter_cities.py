@@ -18,9 +18,10 @@ if __name__ == '__main__':
     """Grab all cities in ascending order"""
     """"Results sorted in asc order by cities.id"""
 
-    cur.execute("SELECT cities.name FROM cities LEFT OUTER JOIN states ON cities.state_id=states.id WHERE states.name='{}'".format(sys.argv[4]))
+    cur.execute("SELECT cities.name FROM cities LEFT OUTER JOIN states"+
+    " ON cities.state_id=states.id WHERE states.name='{}'".format(sys.argv[4]))
     query_rows = cur.fetchall()
     list_a = []
     for row in query_rows:
-        list_a = list_a.append(row)
-        print (' ,'.join(list_a))
+        list_a.append(row[0])
+    print (', '.join(list_a))
