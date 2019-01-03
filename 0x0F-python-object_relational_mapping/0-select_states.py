@@ -14,5 +14,4 @@ cur = db.cursor()
 cur.execute("SELECT * FROM states ORDER BY id ASC")
 query_rows = cur.fetchall()
 for row in query_rows:
-    for col in row:
-        print (col)
+        print ('{}'.format(row))
