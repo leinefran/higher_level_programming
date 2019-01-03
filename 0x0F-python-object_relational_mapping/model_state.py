@@ -3,8 +3,8 @@
 module 'base_model'
 '''
 
-import models
-import SQLAlchemy
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
@@ -15,9 +15,3 @@ class State(Base):
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name =  Column(String(128))
-
-    # Create an engine to the census database
-    user = sys.argv[1]
-    password = sys.argv[2]
-
-    engine = create_engine('mysql+mysqlconnector://user:password@localhost:3306/states')
