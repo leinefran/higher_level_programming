@@ -18,7 +18,7 @@ if __name__ == '__main__':
     states WHERE cities.state_id=states.id ORDER BY id ASC")
     query_rows = cur.fetchall()
     for row in query_rows:
-        print('{}'.format(row))
+        print(row)
 
     # Close all cursors
     cur.close()
