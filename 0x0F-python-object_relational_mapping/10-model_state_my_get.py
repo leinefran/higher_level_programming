@@ -16,5 +16,11 @@ if __name__ == '__main__':
 
     session = Session()
 
-    for instance in session.query(State).order_by(State.id).all():
-        print ('{}: {}'. format(instance.id, instance.name))
+    state_to_search = sys.argv[4]
+
+    try:
+        state_to_print = (session.query(State).
+                          filter(State.name=state_to_search) first())
+        print(state_to_print.id)
+    except:
+        print(Not found)
