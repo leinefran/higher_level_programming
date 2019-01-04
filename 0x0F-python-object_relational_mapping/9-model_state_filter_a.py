@@ -20,4 +20,4 @@ if __name__ == '__main__':
              order_by(State.id).all())
 
     for row in table:
-        print ('{}: {}'. format(row.id, row.name))
+        print('{}: {}'. format(row.id, row.name))
