@@ -15,7 +15,7 @@ if __name__ == '__main__':
     cur = db.cursor()
 
     """Grab all states in ascending order"""
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER_BY id")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'")
     query_rows = cur.fetchall()
     for row in query_rows:
         print ('{}'.format(row))
