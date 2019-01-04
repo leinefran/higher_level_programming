@@ -25,3 +25,8 @@ if __name__ == '__main__':
     for row in query_rows:
         list_a.append(row[0])
     print (', '.join(list_a))
+
+    # Close all cursors
+    cur.close()
+    # Close all databases
+    db.close()
