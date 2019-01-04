@@ -22,5 +22,3 @@ if __name__ == '__main__':
         print ('{}: {}'. format(table.id, table.name))
     else:
         print ("Nothing")
-
-    Session.close()
