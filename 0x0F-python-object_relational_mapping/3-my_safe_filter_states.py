@@ -21,3 +21,8 @@ if __name__ == '__main__':
     query_rows = cur.fetchall()
     for row in query_rows:
         print ('{}'.format(row))
+
+    # Close all cursors
+    cur.close()
+    # Close all databases
+    db.close()
