@@ -24,7 +24,7 @@ if __name__ == '__main__':
     list_a = []
     for row in query_rows:
         list_a.append(row[0])
-    print (', '.join(list_a))
+    print(', '.join(list_a))
 
     # Close all cursors
     cur.close()
