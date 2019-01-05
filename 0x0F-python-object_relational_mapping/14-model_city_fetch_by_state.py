@@ -7,8 +7,6 @@ from model_city import City
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine, ForeignKey
 
-
-
 if __name__ == '__main__':
 
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
