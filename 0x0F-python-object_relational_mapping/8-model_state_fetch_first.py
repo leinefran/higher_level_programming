@@ -19,6 +19,6 @@ if __name__ == '__main__':
     table = session.query(State).order_by(State.id).first()
 
     if table:
-        print ('{}: {}'. format(table.id, table.name))
+        print('{}: {}'. format(table.id, table.name))
     else:
-        print ("Nothing")
+        print("Nothing")
