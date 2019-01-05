@@ -16,11 +16,8 @@ if __name__ == '__main__':
 
     session = Session()
 
-    state_to_search = sys.argv[4]
-
     try:
-        state_to_print = (session.query(State).
-                          filter(State.name=state_to_search) first())
-        print(state_to_print.id)
+        state = session.query(State).filter_by(name=sys.argv[4]).first()
+        print(state.id)
     except:
-        print(Not found)
+        print("Not found")
