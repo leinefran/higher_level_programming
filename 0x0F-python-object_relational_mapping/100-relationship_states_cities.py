@@ -3,10 +3,11 @@
 City “San Francisco” from the database hbtn_0e_100_usa"""
 
 import sys
+import sqlalchemy
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import (create_engine)
-
+from relationship_city import City
 
 if __name__ == '__main__':
 
