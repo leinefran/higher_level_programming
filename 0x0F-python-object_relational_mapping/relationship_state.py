@@ -2,8 +2,6 @@
 '''
 module 'base_model'
 '''
-
-
 from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -19,4 +17,4 @@ class State(Base):
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128))
-    cities = relationship("City", back_populates="states")
+    cities = relationship("City", back_ref="states")
