@@ -2,7 +2,8 @@
 # a Python script that fetches a URL
 # and displays the value of the X-Request-Id
 
-import urllib.request, sys
+import urllib.request
+import sys
 
 if __name__ == "__main__":
 
