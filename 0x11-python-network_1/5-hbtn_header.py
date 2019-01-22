@@ -12,5 +12,6 @@ if __name__ == "__main__":
     r = requests.get(url)
 
     # grab the value of X-Request-Id
-    id = r.headers['X-Request-Id']
+    head = r.headers
+    id = head.get('X-Request-Id')
     print(id)
