@@ -4,14 +4,15 @@
 
 import requests
 import sys
+if __name__ == "__main__":
 
-def main():
     url = 'https://swapi.co/api/people/?search='
-    search = {'search': argv[1]}
+    search = {'search': sys.argv[1]}
 
-    r = request.post(url, search)
+    r = requests.get(url, search)
 
     result = r.json()
-    print("Number of results: {}".format(result))
 
-if __name__ == "__main__":
+    print("Number of results: {}".format(result['count']))
+    for name in result['results']:
+        print(name['name'])
