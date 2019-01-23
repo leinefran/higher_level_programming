@@ -12,7 +12,8 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         letter = {'q': sys.argv[1]}
     else:
-        print("No result")
+        q = ""
+        letter = q
 
     r = requests.post(url, letter)
 
