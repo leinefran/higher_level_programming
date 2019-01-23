@@ -6,10 +6,10 @@ import requests
 import sys
 if __name__ == "__main__":
 
-    url = 'https://swapi.co/api/people/?search='
-    search = {'search': sys.argv[1]}
+    search = sys.argv[1]
+    url = 'https://swapi.co/api/people/?search=' + search
 
-    r = requests.get(url, search)
+    r = requests.get(url)
 
     result = r.json()
 
