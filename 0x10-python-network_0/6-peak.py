@@ -6,6 +6,11 @@ def find_peak(list_of_integers):
     '''A function that finds a peak in a list of unsorted integers'''
 
     if list_of_integers:
-        peak = max(list_of_integers)
-        return(peak)
+        # first, sort the list:
+        list_of_integers.sort()
+
+        # return last element, which is the max:
+        return(list_of_integers[-1])
+
+    #else:
     return(None)
