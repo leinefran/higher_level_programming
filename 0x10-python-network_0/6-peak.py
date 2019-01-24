@@ -12,5 +12,4 @@ def find_peak(list_of_integers):
         # return last element, which is the max:
         return(list_of_integers[-1])
 
-    #else:
     return(None)
