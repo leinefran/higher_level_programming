@@ -5,8 +5,8 @@ def multiple_returns(sentence):
 
     if not sentence:
         new_tuple = 'None'
-    else if len(sentence) == 0:
-        len(sentence), 'None'
+    if len(sentence) == 0:
+        new_typle = len(sentence), 'None'
     else:
         new_tuple = len(sentence), sentence[0]
 
