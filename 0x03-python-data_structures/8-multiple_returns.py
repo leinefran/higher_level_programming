@@ -3,7 +3,7 @@ def multiple_returns(sentence):
 
     new_tuple = ()
 
-    if not sentence:
+    if not sentence or if sentence == "":
         new_tuple = 'None'
     else:
         new_tuple = len(sentence), sentence[0]
