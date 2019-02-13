@@ -5,8 +5,7 @@
    The second argument is the second integer
    use console.log() to print output */
 
-function add(a, b) {
-
+function add (a, b) {
   let sum = +a + +b;
   console.log(sum);
   return sum;
