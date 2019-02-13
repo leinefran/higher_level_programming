@@ -7,7 +7,7 @@ function sortNumber (a, b) {
 }
 let myArray = process.argv;
 
-if (myArray.length < 3) {
+if (myArray.length <= 3) {
   console.log('0');
 } else {
   myArray.sort(sortNumber);
