@@ -2,10 +2,9 @@
 // an empty class Retangle that defines a rectangle;
 // and takes two arguments: width and height;
 
-class Rectangle {
-  constructor (height, width) {
-    this.height = h;
+module.exports = class Rectangle {
+  constructor (w, h) {
     this.width = w;
+    this.height = h;
   }
-}
-module.exports = Rectangle;
+};
