@@ -10,7 +10,6 @@ module.exports = class Rectangle {
     }
   }
   print () {
-    console.log('X'.repeat(this.width).concat('\n').repeat(this.height)
-	       .slice(0, -1));
+    console.log('X'.repeat(this.width).concat('\n').repeat(this.height).slice(0, -1));
   }
 };
