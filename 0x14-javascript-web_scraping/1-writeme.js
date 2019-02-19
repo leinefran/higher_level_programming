@@ -8,10 +8,9 @@ const fs = require('fs');
 
 let text = process.argv[3];
 
-fs.writeFile(process.argv[2], text, (err) => {
+fs.writeFile(process.argv[2], text, { encoding: 'utf-8' }, (err) => {
   // catch error
-  if (err) throw err;
-
-  // success case, the file was saved!
-  console.log('It worked!');
+  if (err) {
+    console.log(err);
+  }
 });
