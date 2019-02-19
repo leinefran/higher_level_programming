@@ -5,6 +5,6 @@ let countPrint = 0;
 exports.logMe = function (item) {
   if (item) {
     console.log(countPrint + ': ' + item);
-    countPrint +=1;
+    countPrint += 1;
   }
-}
+};
