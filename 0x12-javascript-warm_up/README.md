@@ -5,7 +5,7 @@
 Introduction to Java Script
 
 
-## Requirements for SQL scripts
+## Requirements for JS scripts
 
  * Allowed editors: vi, vim, emacs
  * All your files will be interpreted on Ubuntu 14.04 LTS using node (version 6.10.2)
