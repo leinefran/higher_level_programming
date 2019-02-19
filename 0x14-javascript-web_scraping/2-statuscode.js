@@ -6,9 +6,9 @@ You must use the module request */
 
 const request = require('request');
 
-request.get(process.argv[2], function(err, res) {
+request.get(process.argv[2], function (err, res) {
   if (err) {
-    console.log('error:', error); // Print the error if one occurred
+    console.log(err); // Print the error if one occurred
   } else {
     console.log('code :', res.statusCode); // Print the res status code
   }
