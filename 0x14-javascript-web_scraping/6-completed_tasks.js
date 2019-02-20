@@ -10,14 +10,13 @@ let url = process.argv[2]
 request.get(url, function (err, res, body) {
   if (err) {
     console.log(err); // Print the error if one occurred
-  } else {
-    let todoList = JSON.parse(body); // todoList is an array of dictionaries;
-    let tasks = 0;
-    let newDict = {};
-
-    for (let i = 0; i < todoList.length; i++) {
-      if (todoList[i].completed === true) {
-	newDict[userId] = todoList[i].userId;
-      }
   }
+  let newObj = {};
+  // todoList is an array of dictionaries;
+  let todoList = JSON.parse(body).forEach(function(item) {
+    if(item.completed) {
+       newObj[item.userId] ? newObj[item.userId] += 1 : newObj[item.userId] = 1;
+    }
+  });
+  console.log(newObj)
 });
