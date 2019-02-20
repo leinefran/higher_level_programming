@@ -16,7 +16,7 @@ request.get(url, function (err, res, body) {
     let dic = JSON.parse(body).results;
     for (let k of dic) {
       for (let key of k.characters) {
-        if (key === 'https://swapi.co/api/people/18/') {
+        if (key.includes('18/')) {
           count += 1;
         }
       }
