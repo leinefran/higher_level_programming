@@ -13,8 +13,15 @@ request.get(url, function (err, res, body) {
   if (err) {
     console.log(err); // Print the error if one occurred
   } else {
-    let dic = JSON.parse(body);
-    let results = dic['results'];
-    console.log(results);
+    let count = 0;
+    let dic = JSON.parse(body).results;
+    for (let k of dic) {
+      for (let key of k.characters) {
+        if (key === 'https://swapi.co/api/people/18/') {
+	  count += 1;
+        }
+      }
+    }
+    console.log(count);
   }
 });
