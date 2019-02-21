@@ -16,14 +16,12 @@
 ## Requirements for JS scripts
 
  * Allowed editors: vi, vim, emacs
- * All your files will be interpreted on Ubuntu 14.04 LTS using node (version 6.10.2)
+ * All your files will be interpreted on Chrome (version 57.0)
  * All your files should end with a new line
- * The first line of all your files should be exactly #!/usr/bin/node
  * A README.md file, at the root of the folder of the project, is mandatory
  * Your code should be semistandard compliant with the flag --global $: semistandard *.js --global $
  * You must use jQuery version 3.x
- * All your files must be executable
- * The length of your files will be tested using wc
+ * HTML should not reload for each action: DOM manipulation, update values, fetch data…
 
 ---
 File|Task
