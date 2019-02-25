@@ -5,5 +5,6 @@
  You must use the jQuery API */
 
 $('#toggle_header').on('click', function () {
-  $('header').addClass('red').toggleClass('green');
+  $('header').toggleClass('green');
+  $('header').toggleClass('red');
 });
