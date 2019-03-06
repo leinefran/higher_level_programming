@@ -9,7 +9,7 @@ This repository contains projects for training Python programming. Most projects
 ## Getting started
 To use, first download this repository into your local machine by issuing the following command in your local terminal.
 ```
-git clone https://github.com/sumin3/holbertonschool-higher_level_programming.git
+git clone https://github.com/leinefran/holbertonschool-higher_level_programming.git
 ```
 #### Directory
 Each directoy's name includes information below
